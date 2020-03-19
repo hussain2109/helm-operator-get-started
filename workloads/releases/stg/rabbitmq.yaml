@@ -3,6 +3,8 @@ kind: HelmRelease
 metadata:
   name: rabbitmq
   namespace: stg
+  annotations:
+    fluxcd.io/automated: "true"
 spec:
   releaseName: rabbitmq
   targetNamespace: stg

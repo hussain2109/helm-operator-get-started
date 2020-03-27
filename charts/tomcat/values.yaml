@@ -1,2 +1,2 @@
 service:
-  internalPort: 9000
+  internalPort: 8080

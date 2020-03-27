@@ -14,7 +14,7 @@ spec:
   forceUpgrade: false
   chart:
     repository: https://kubernetes-charts.storage.googleapis.com/
-    name: stable/tomcat
+    name: tomcat
     version: 0.4.1
   values:
     replicas: 1

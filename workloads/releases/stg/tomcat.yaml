@@ -1,0 +1,20 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: tomcat
+  namespace: stg
+  annotations:
+    fluxcd.io/automated: "true"
+spec:
+  releaseName: tomcat
+  targetNamespace: stg
+  timeout: 300
+  resetValues: false
+  wait: false
+  forceUpgrade: false
+  chart:
+    repository: https://kubernetes-charts.storage.googleapis.com/
+    name: stable/tomcat
+    version: 0.4.1
+  values:
+    replicas: 1

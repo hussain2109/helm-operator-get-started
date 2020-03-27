@@ -16,5 +16,6 @@ spec:
     repository: https://kubernetes-charts.storage.googleapis.com/
     name: tomcat
     version: 0.4.1
-  values:
-    replicas: 1
+  valuesFrom:
+  - externalSourceRef:
+      url: https://github.com/helm/charts/blob/master/stable/tomcat/values.yaml

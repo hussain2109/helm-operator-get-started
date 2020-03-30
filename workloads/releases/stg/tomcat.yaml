@@ -19,5 +19,3 @@ spec:
   valuesFrom:
   - configMapKeyRef:
       name: tomcat-values
-      namespace: stg
-      key: values.yaml

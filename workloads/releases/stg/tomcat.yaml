@@ -17,5 +17,7 @@ spec:
     name: tomcat
     version: 0.4.1
   valuesFrom:
-  - chartFileRef:
-      path: charts/tomcat/values.yaml
+  - configMapKeyRef:
+      name: tomcat-values
+      namespace: stg
+      key: values.yaml

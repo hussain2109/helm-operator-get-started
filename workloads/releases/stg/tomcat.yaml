@@ -17,5 +17,5 @@ spec:
     name: tomcat
     version: 0.4.1
   valuesFrom:
-  - externalSourceRef:
-      url: https://raw.githubusercontent.com/hussain2109/helm-operator-get-started/master/charts/tomcat/values.yaml
+  - chartFileRef:
+      path: charts/tomcat/values.yaml

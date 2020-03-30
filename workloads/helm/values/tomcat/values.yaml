@@ -1,0 +1,10 @@
+# create configmap for cwagent config
+apiVersion: v1
+data:
+  values.yaml: |
+    service:
+      internalPort: 8080
+kind: ConfigMap
+metadata:
+  name: tomcat-values
+  namespace: stg

@@ -3,7 +3,7 @@ apiVersion: v1
 data:
   values.yaml: |
     service:
-      internalPort: 8080
+      internalPort: 9000
 kind: ConfigMap
 metadata:
   name: tomcat-values

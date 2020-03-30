@@ -7,4 +7,4 @@ metadata:
 data:
   values.yaml: |
     service:
-      internalPort: 80
+      internalPort: 8080

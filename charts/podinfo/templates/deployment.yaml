@@ -109,6 +109,8 @@ spec:
           volumeMounts:
           - name: data
             mountPath: /data
+          - name: dev-smtp-tls
+            mountPath: /etc/testing/ssl/certs
           resources:
 {{ toYaml .Values.resources | indent 12 }}
     {{- with .Values.nodeSelector }}
@@ -126,3 +128,6 @@ spec:
       volumes:
       - name: data
         emptyDir: {}
+      - name: dev-smtp-tls
+        secret:
+          secretName: dev-tls-secret
